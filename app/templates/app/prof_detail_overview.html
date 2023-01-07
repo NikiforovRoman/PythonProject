@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% include 'app/include/prof_head.html' %}
+    <h1>{{ prof.name }}</h1>
+    {% for desc in prof_descs %}
+        <h2>{{ desc.title }}</h2>
+        <div>
+        {% autoescape off %}
+         {{ desc.description }}
+        {% endautoescape %}
+        </div>
+    {% endfor %}
+{% endblock %}

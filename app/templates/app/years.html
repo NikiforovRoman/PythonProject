@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Доступные года:</h1>
+    {% for year in years %}
+        <a href="/year/{{ year.year }}/">{{ year.year }} год</a>
+    {% endfor %}
+
+{% endblock %}

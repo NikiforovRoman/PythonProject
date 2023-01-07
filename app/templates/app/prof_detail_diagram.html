@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% include 'app/include/prof_head.html' %}
+    <h1>{{ prof.name }}</h1>
+    <h2>{{ diag_1.title }}</h2>
+    <img src="{{ diag_1.image }}" alt="no image" width="500" height="300">
+    <h1>===========</h1>
+    <h2>{{ diag_2.title }}</h2>
+    <img src="{{ diag_2.image }}" alt="no image" width="500" height="300">
+{% endblock %}

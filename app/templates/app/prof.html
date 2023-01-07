@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Доступные профессии: </h2>
+    {% for prof in profs %}
+        <a href="/professions/{{ prof.id }}/overview/">{{ prof.name }}</a>
+    {% endfor %}
+{% endblock %}
