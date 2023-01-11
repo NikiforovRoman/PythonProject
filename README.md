@@ -1,7 +1,7 @@
 # professions_site
 
 # Запуск:
-0. C:\Users\Роман\Downloads\app
+0. cd C:\Users\Роман\Downloads\app
 1. python -m venv venv
 2. cd venv/Scripts/
 3. activate
