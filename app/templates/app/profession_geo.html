@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<title>Demand</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="site-container">
+
+  <main class="main">
+    <section class="demand">
+      <div class="container">
+        <div class="container profession__container">
+          <h1 class="profession__title">{{ prof.name }}</h1>
+          {% include "app/include/prof_head.html" %}
+          <img loading="lazy" src="{% static "img/geography-decor1.svg" %}" class="image geography__decor-1"
+            width="140" height="140" alt="Декор">
+          <img loading="lazy" src="{% static "img/geography-decor2.svg" %}" class="image geography__decor-2"
+            width="175" height="175" alt="Декор">
+          <h1 class="geography__title">География</h1>
+          <div class="geography__salary geography__content">
+            <div class="geography__right">
+              <h2 class="geography__right-title">{{ diag_1.title }}</h2>
+              <img loading="lazy" src="{{ diag_1.image }}" alt="График">
+            </div>
+            <img loading="lazy" src="{% static "img/geography-decor3.svg"%}" class="image geography__decor-3"
+              width="199" height="178" alt="Декор">
+          </div>
+          <div class="geography__vacancies geography__content">
+            <img loading="lazy" src="{% static "img/geography-decor2.svg" %}" class="image geography__decor-4" style="z-index: -1"
+              width="175" height="175" alt="Декор">
+            <div class="geography__right">
+              <h2 class="geography__right-title">{{ diag_2.title}}</h2>
+              <img loading="lazy" src="{{ diag_2.image }}" alt="График">
+            </div>
+            <img loading="lazy" src="{% static "img/geography-decor3.svg" %}" class="image geography__decor-5"
+              width="199" height="178" alt="Декор">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+{% endblock %}
