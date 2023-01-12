@@ -1,6 +1,7 @@
 # professions_site
 
 # Запуск:
+0. cd 'Путь к файлам проекта'
 1. python -m venv venv
 2. cd venv/Scripts/
 3. activate
