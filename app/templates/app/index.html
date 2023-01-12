@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>Главная</title>
+{% endblock %}
+
+
+{% block content %}
+  <div class="site-container">
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <img loading="lazy" src="{% static "img/triangles-1.svg" %}" class="image hero__triangles-1" width="218" height="198"
+      alt="Треугольники">
+    <h1 class="hero__title">Кто такой — верстальщик?</h1>
+    <div class="hero__content">
+      <div class="hero__left">
+        <img loading="lazy" src="{% static "img/comp-img-1.svg" %}" class="image hero__img-1" width="337" height="337" alt="">
+        <img loading="lazy" src="{% static "img/comp-img-2.svg" %}" class="image hero__img-2" width="352" height="352" alt="">
+      </div>
+      <div class="hero__right">
+        <div class="hero__right-content">
+          <div class="hero__block hero__block--1">
+            <div class="hero__text">Верстальщик — это специалист, который выполняет верстку web-сайтов. Он отвечает за
+              наполнение ресурса необходимыми картинками, фотографиями и текстами. Верстальщик обеспечивает корректное и
+              одинаковое отображение веб-ресурсов во всех основных браузерах, контролирует бесперебойную работу
+              интерактивных
+              и динамических элементов ресурса. Для проверки проводится тестирование с учетом возможных отличий по цвету
+              и
+              разрешению на различных мониторах.</div>
+          </div>
+          <div class="hero__block hero__block--2">
+            <img loading="lazy" src="{% static "img/triangles-2.svg" %}" class="image hero__triangles-2" width="178" height="180"
+              alt="Треугольники">
+            <ul class="hero__list">
+              <li class="hero__item">Язык разметки. HTML, HTML5, дополнительно желательно знать HTML-фреймворки: Twitter
+                Bootstrap или Semantic UI;</li>
+              <li class="hero__item">CSS (каскадную таблицу стилей). При помощи нее задается стилистика страниц;</li>
+              <li class="hero__item">Основы JavaScript, jQuery. При помощи них задается динамика;</li>
+              <li class="hero__item">Основы PHP;</li>
+              <li class="hero__item">Инструменты проверки правильности, валидности кода.</li>
+            </ul>
+          </div>
+          <div class="hero__block hero__block--1 hero__block--3">
+            <div class="hero__text">Средний месячный заработок HTML-верстальщика в России составляет 40-80 тысяч рублей.
+              В Москве и Санкт-Петербурге специалист по верстке может рассчитывать на 100-150 тысяч рублей. Заработок
+              верстальщика зависит от его опыта. Час работы может оплачиваться от 10$ до 40$, за проект легко можно
+              получить от 70$ до 150$. Конечно, профессионалы получают намного больше за почасовую и проектную работу.
+            </div>
+            <img loading="lazy" src="{% static "img/triangles-3.svg" %}" class="image hero__triangles-3" width="224" height="232"
+              alt="Треугольники">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <div class="main__triangle">
+        <img loading="lazy" src="{% static "img/triangle-transition.svg" %}" class="image main__triangle-img" width="1472" height="285"
+          alt="Треугольник">
+      </div>
+      <section class="difference">
+  <div class="container difference__container">
+    <h2 class="difference__title">Важно: нельзя путать понятие <br>
+      верстальщика и Frontend-разработчика.</h2>
+    <div class="difference__content">
+      <div class="difference__left">
+        <img loading="lazy" src="{% static "img/decor-1.svg" %}" class="image difference__decor-1" width="119" height="114"
+          alt="Декорация">
+        <p class="difference__text">Часто в вакансиях на должность верстальщика «светятся» требования, которые нельзя
+          относить к этой должности. Пример: доскональное знание JavaScript. Верстальщик должен знать, как это работает,
+          но максимум его компетенции распространяется на знание типовых решений, которые позволят решить простые
+          задачи,
+          заложенные в макете.</p>
+        <img loading="lazy" src="{% static "img/decor-2.svg" %}" class="image difference__decor-2" width="134" height="134"
+          alt="Декорация">
+        <p class="difference__text">Тогда как Frontend-разработчик должен глубоко знать JavaScript, включая фреймворки,
+          а
+          также ему присущи навыки, которые позволяют расширять их возможности.</p>
+        <p class="difference__text">Завышенные требования к верстальщикам обусловлены тем, что работодатель хочет
+          получить
+          максимум за минимальные деньги. Поэтому он ищет именно верстальщика, который будет выполнять работу
+          Frontend-а.
+        </p>
+        <img loading="lazy" src="{% static "img/decor-3.svg" %}" class="image difference__decor-3" width="181" height="182"
+          alt="Декорация">
+      </div>
+      <picture>
+{#        <source srcset="{% static "img/women-img.avif" %}" type="image/avif">#}
+{#        <source srcset="{% static "img/women-img.webp" %}" type="image/webp">#}
+        <img loading="lazy" src="{% static "img/women-img.png" %}" class="image difference__right-img" width="472" height="541"
+          alt="Женщина">
+      </picture>
+    </div>
+  </div>
+</section>
+      <section class="suits">
+  <div class="container">
+    <h3 class="suits__title">Кому не подойдет профессия?</h3>
+    <div class="suits__content">
+      <div class="suits__left">
+        <div class="suits__text">Работа верстальщиком не подойдет в том случае,
+          если вы не в состоянии долгое время сидеть за компьютером,
+          не выносите однообразие и рутину.
+          Вы не сможете эффективно выполнять задания, если:
+        </div>
+        <ol class="suits__list">
+          <li class="suits__item">не имеете опыта работы с текстовыми редакторами;</li>
+          <li class="suits__item">отсутствуют навыки в создании сайтов;</li>
+          <li class="suits__item">не умеете работать с графическим редактором Photoshop;</li>
+          <li class="suits__item">не знаете язык программирования JavaScript.</li>
+        </ol>
+      </div>
+      <div class="suits__right">
+        <img loading="lazy" src="{% static "img/decor-3.svg" %}" class="image suits__decor-1" width="181" height="182" alt="Декор">
+        <picture>
+{#          <source srcset="{% static "img/man-img.avif" %}" type="image/avif">#}
+{#          <source srcset="{% static "img/man-img.webp" %}" type="image/webp">#}
+          <img src="{% static "img/man-img.png" %}" class="image suits__img" width="400" height="433" alt="Мужчина">
+        </picture>
+        <img loading="lazy" src="{% static "img/decor-2.svg" %}" class="image suits__decor-2" width="221" height="221" alt="Декор">
+      </div>
+    </div>
+
+  </div>
+</section>
+    </main>
+  </div>
+{% endblock %}
