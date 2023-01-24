@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block head %}
+    <title>Года</title>
+{% endblock %}
+{% block content %}
+    <div class="site-container">
+    <main class="main">
+      <section class="professions">
+  <div class="container professions__container">
+    <h1 class="profession__title">{{ prof.name }}</h1>
+    {% include 'app/include/prof_head.html' %}
+    <h1 class="professions__title">Доступные года:</h1>
+   <ul class="professions__list list-reset">
+   {% if years %}
+        {% for year in years %}
+        <li class="professions__item"><a href="/professions/{{ prof.id }}/year/{{ year.year }}/" class="professions__link">{{ year.year }} год</a></li>
+        {% endfor %}
+   {% else %}
+        <h2 class="profession__title">Нет данных</h2>
+   {% endif %}
+
+   </ul>
+    </div>
+</section>
+    </main>
+  </div>
+{% endblock %}
